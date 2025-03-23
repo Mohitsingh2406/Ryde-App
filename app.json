@@ -31,7 +31,7 @@
       [
         "expo-router",
         {
-          "origin": "https://uber.dev/"
+          "origin": "https://uber.com/"
         }
       ]
     ],

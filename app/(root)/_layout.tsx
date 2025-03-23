@@ -1,12 +1,24 @@
-import { Text } from "react-native";
-import { SafeAreaView } from "react-native-safe-area-context";
+import { Stack } from "expo-router";
 
-const SignIn = () => {
+const Layout = () => {
     return (
-        <SafeAreaView>
-            <Text className="text-black">Home</Text>
-        </SafeAreaView>
-    )
-}
+        <Stack>
+            <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
+            <Stack.Screen name="find-ride" options={{ headerShown: false }} />
+            <Stack.Screen
+                name="confirm-ride"
+                options={{
+                    headerShown: false,
+                }}
+            />
+            <Stack.Screen
+                name="book-ride"
+                options={{
+                    headerShown: false,
+                }}
+            />
+        </Stack>
+    );
+};
 
-export default SignIn
+export default Layout;
